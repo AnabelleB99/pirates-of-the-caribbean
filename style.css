@@ -7,3 +7,26 @@
 :root {
     --primary-color: black;
   }
+
+  @font-face {
+    font-family: 'PiecesOfEight';
+    src: url('fonts/PiecesOfEight.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'UglyQua';
+    src: url('fonts/UglyQua.otf') format('opentype');
+  }
+
+  body {
+    background: #dcc9a7;
+    font-family: 'UglyQua';
+    font-size: 18px;
+    color: #020202;
+  }
+
+  h1 {
+    font-family: 'PiecesOfEight';
+    font-size: 72px;
+    color: #bb2326;
+  } 
