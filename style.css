@@ -1,3 +1,5 @@
+/*BASE STYLES*/
+
 * {
     margin: 0;
     padding: 0;
@@ -60,5 +62,40 @@
     color: #bb2326;
   }
 
+  /*END BASE STYLES*/
+
+
+/*Individual page styles go below. 
+
+Please keep them organized!!!
+
+When naming classes, use this format: .yourpage-thing 
+(e.g., .about-header, .home-section) to avoid confusion and keep things tidy.*/
+
+
+  /*HOMEPAGE STYLES*/
+
+  /*END HOMEPAGE STYLES*/
+
+
+  /*PLOT PAGE STYLES*/
+
+  /*END PLOT PAGE STYLES*/
+
+
+  /*CAST PAGE STYLES*/
+
+  /*END CAST PAGE STYLES*/
+
+
+  /*SOUNDTRACK PAGE STYLES*/
+
+  /*END SOUNDTRACK PAGE STYLES*/
+
+
+  /*BEHIND THE SCENES PAGE STYLES*/
+
+
+  /*END BEHIND THE SCENES PAGE STYLES*/
 
 
