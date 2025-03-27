@@ -89,6 +89,15 @@ When naming classes, use this format: .yourpage-thing
 
 
   /*SOUNDTRACK PAGE STYLES*/
+  .soundtrack_hero {
+    position: relative;
+    width: 100vw;
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Hans-zimmer.jpg");
+  }
 
   /*END SOUNDTRACK PAGE STYLES*/
 
