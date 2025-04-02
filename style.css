@@ -79,7 +79,84 @@ When naming classes, use this format: .yourpage-thing
 
 
   /*PLOT PAGE STYLES*/
+  .plot-hero {
+    background-position: center;
+    background-image: url(Images/PoC_Hero-Image-1.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 40px 0;
+  }
+  .plot-hero__title, .plot-hero__subtitle {
+    color: #fbf8e0;
+  }
+  .plot-hero__title {
+    margin: 10px 500px 0 60px;
+  }
+  .plot-hero__subtitle {
+    margin: 0 500px 10px 60px;
+  }
+  .plot-hero__sub-heading {
+    word-spacing: 4px;
+  }
+  .plot-hero__sub-heading, .plot-hero__copy {
+    color: #fbf8e0;
+    margin: 10px 500px 0 60px;
+  }
+  .plot-hero__button {
+    background-color: #bb2326;
+    color: #fbf8e0;
+    padding: 12px 28px;
+    margin: 10px 0 0 60px;
+    border-radius: 4px;
+    border: transparent;
+    font-family: 'UglyQua', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .plot-hero__button:hover {
+    background-color: #fbf8e0;
+    color: #bb2326;
+  }
 
+  .plot-details {
+    background-position: center top;
+    background-image: url(Images/PoC_Skull-and-Crossbones.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    height: 50vh;
+    color: #fbf8e0;
+  }
+  .plot-details h2 {
+    color: #fbf8e0;
+}
+  .plot-details__grid {
+    margin: 0 80px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 40px 80px;
+  }
+ 
+  .plot-synopsis {
+    background-position: center;
+    background-image: url(Images/parchment--background.jpg.avif);
+    background-size: cover;
+    max-width: 100%;
+    padding-bottom: 40px;
+  }
+  .plot-synopsis__heading {
+    padding: 40px 200px 10px 200px;
+  }
+  .plot-synopsis__copy { 
+    text-indent: 3em;
+    padding: 5px 200px;
+  }
   /*END PLOT PAGE STYLES*/
 
 
@@ -136,7 +213,7 @@ When naming classes, use this format: .yourpage-thing
   }
 
   .soundtrack_img {
-    width 300px;
+    width: 300px;
     height: 240px;
   }
 
