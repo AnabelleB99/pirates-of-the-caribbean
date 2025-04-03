@@ -245,6 +245,20 @@ When naming classes, use this format: .yourpage-thing
 
   /*BEHIND THE SCENES PAGE STYLES*/
 
+  .bts_dyk {
+
+
+  }
+  .bts_dyk__list {
+    
+    font-family: 'PiecesOfEight', sans-serif;
+    font-size: 40px;
+    color: #020202;
+  }
+
+ .bts_dyk
+
+ .bts_video
 
   /*END BEHIND THE SCENES PAGE STYLES*/
 
