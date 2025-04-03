@@ -168,7 +168,7 @@ When naming classes, use this format: .yourpage-thing
   /*SOUNDTRACK PAGE STYLES*/
 
 .soundtrack_content {
-    max-width: 90vw;
+    max-width: 100%;
     justify-self: center;
     margin: 20px;
   }
@@ -207,21 +207,34 @@ When naming classes, use this format: .yourpage-thing
     transform: translate(-50%, -50%);
     color: white;
   }
+
+  .soundtrack_content_composers_container, .soundtrack_content_theme_container {
+    margin-top: 50px;
+    max-width: 80vw;
+  }
+
+  .soundtrack_theme_img, .soundtrack_composer_img {
+    width: 200px;
+    height: 200px;
+    float: right;
+  }
+
+  .soundtrack_composer_text, .soundtrack_theme_text {
+    max-width: 50vw;
+    margin: 20px 0 20px;
+  }
+
   .soundtrack_tracks_img {
     width: 100px;
     height: 100px;
     grid-area: picture;
   }
 
-  .soundtrack_img {
-    width: 300px;
-    height: 240px;
-  }
-
   .soundtrack_content_tracks_container {
     max-width: 75vw;
-    display: flex;
+    display: flex; 
     column-gap: 30px;
+    margin-top: 100px;
   }
 
   .soundtrack_notable_tracks {
@@ -234,7 +247,7 @@ When naming classes, use this format: .yourpage-thing
     column-gap: 30px;
     row-gap: 10px;
     grid-template-columns: 100px 250px;
-    grid-template-rows: 30px 1fr 30px;
+    grid-template-rows: 30px .5fr 30px;
   }
 
   .soundtrack_listen {
@@ -242,6 +255,7 @@ When naming classes, use this format: .yourpage-thing
     color: #bb2326;
     text-transform: uppercase;
     grid-area: listen;
+    grid-row: 3;
   }
 
   .soundtrack_track_description {
