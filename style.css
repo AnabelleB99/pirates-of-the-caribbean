@@ -210,6 +210,7 @@ When naming classes, use this format: .yourpage-thing
   .soundtrack_tracks_img {
     width: 100px;
     height: 100px;
+    grid-area: picture;
   }
 
   .soundtrack_img {
@@ -218,28 +219,40 @@ When naming classes, use this format: .yourpage-thing
   }
 
   .soundtrack_content_tracks_container {
-    display: flex;
     max-width: 75vw;
-    justify-self: center;
-    margin-top: 30px;
-    height: 600px;
-    column-gap: 40px;
+    display: flex;
+    column-gap: 30px;
   }
 
   .soundtrack_notable_tracks {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .soundtrack_track_description {
-    float: right;
+    display: grid;
+    grid-template-areas: 
+    'title title'
+    'picture content'
+    'listen listen';
+    max-width: 75vw;
+    column-gap: 30px;
+    row-gap: 10px;
+    grid-template-columns: 100px 250px;
+    grid-template-rows: 30px 1fr 30px;
   }
 
   .soundtrack_listen {
     text-decoration: none;
     color: #bb2326;
     text-transform: uppercase;
+    grid-area: listen;
   }
+
+  .soundtrack_track_description {
+    grid-area: content;
+  }
+
+  .soundtrack_track_title {
+    grid-area: title;
+    font-weight: bold;
+  }
+
   /*END SOUNDTRACK PAGE STYLES*/
 
 
