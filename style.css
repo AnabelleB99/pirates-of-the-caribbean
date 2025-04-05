@@ -75,6 +75,72 @@ When naming classes, use this format: .yourpage-thing
 
   /*HOMEPAGE STYLES*/
 
+
+.home_content {
+  max-width: 90vw;
+  justify-self: center;
+  margin: 20px;
+}
+
+.home_hero {
+  position: relative;
+  width: 100vw;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_hero_content {
+  background-color: DCC9A7;
+  background-size: cover;
+  height: 33vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  justify-items: center;
+}
+
+.home_hero_title {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home_hero_subtitle {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.home_content_tracks_container {
+  display: flex;
+  max-width: 75vw;
+  justify-self: center;
+  margin-top: 30px;
+  height: 600px;
+  column-gap: 40px;
+}
+
+.home_notable_tracks {
+  display: flex;
+  flex-direction: column;
+}
+
+.home_track_description {
+  float: right;
+}
+
+.home_listen {
+  text-decoration: none;
+  color: #bb2326;
+  text-transform: uppercase;
+}
+
   /*END HOMEPAGE STYLES*/
 
 
