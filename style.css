@@ -191,8 +191,8 @@ When naming classes, use this format: .yourpage-thing
 
 .soundtrack_content {
     max-width: 100%;
-    justify-self: center;
-    margin: 20px;
+    justify-content: center;
+    margin-top: 30px;
   }
 
   .soundtrack_hero {
@@ -241,8 +241,9 @@ When naming classes, use this format: .yourpage-thing
   }
 
   .soundtrack_content_composers_container, .soundtrack_content_theme_container {
-    margin-top: 50px;
     max-width: 80vw;
+    margin: auto;
+
   }
 
   .soundtrack_theme_img, .soundtrack_composer_img {
@@ -263,40 +264,41 @@ When naming classes, use this format: .yourpage-thing
   }
 
   .soundtrack_content_tracks_container {
-    max-width: 75vw;
-    display: flex; 
-    column-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 350px;
+    column-gap: 50px;
+    row-gap: 10px;
+    justify-items: center; 
     margin-top: 100px;
+    justify-content: center;
+  }
+
+  .soundtrack_h3 {
   }
 
   .soundtrack_notable_tracks {
-    display: grid;
-    grid-template-areas: 
-    'title title'
-    'picture content'
-    'listen listen';
-    max-width: 75vw;
-    column-gap: 30px;
-    row-gap: 10px;
-    grid-template-columns: 100px 250px;
-    grid-template-rows: 30px .5fr 30px;
+    
   }
 
   .soundtrack_listen {
     text-decoration: none;
     color: #bb2326;
     text-transform: uppercase;
-    grid-area: listen;
-    grid-row: 3;
   }
 
   .soundtrack_track_description {
-    grid-area: content;
+    margin-bottom: 20px;
   }
 
   .soundtrack_track_title {
-    grid-area: title;
     font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .soundtrack_tracks_img {
+    float: left;
+    margin-right: 15px;
   }
 
   /*END SOUNDTRACK PAGE STYLES*/
