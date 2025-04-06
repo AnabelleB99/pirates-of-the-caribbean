@@ -193,6 +193,11 @@ When naming classes, use this format: .yourpage-thing
     max-width: 100%;
     justify-content: center;
     margin-top: 30px;
+    display: grid;
+    grid-template-areas:
+    'composers'
+    'themes'
+    'tracks';
   }
 
   .soundtrack_hero {
@@ -229,7 +234,7 @@ When naming classes, use this format: .yourpage-thing
   .soundtrack_hero_subtitle {
     text-align: center;
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -243,14 +248,21 @@ When naming classes, use this format: .yourpage-thing
   .soundtrack_content_composers_container, .soundtrack_content_theme_container {
     max-width: 80vw;
     margin: auto;
-
   }
 
+.soundtrack_content_composers_container {
+  grid-area: composers;
+}
+
+.soundtrack_content_theme_container {
+  grid-area: themes;
+}
   .soundtrack_theme_img, .soundtrack_composer_img {
     width: 200px;
     height: 200px;
     float: right;
-  }
+    margin: 0 0 5px 20px;
+}
 
   .soundtrack_composer_text, .soundtrack_theme_text {
     max-width: 50vw;
@@ -260,25 +272,18 @@ When naming classes, use this format: .yourpage-thing
   .soundtrack_tracks_img {
     width: 100px;
     height: 100px;
-    grid-area: picture;
   }
 
   .soundtrack_content_tracks_container {
+    grid-area: tracks;
+    max-width: 80vw;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 350px;
     column-gap: 50px;
-    row-gap: 10px;
     justify-items: center; 
-    margin-top: 100px;
+    margin: 100px 0px 100px 0px;
     justify-content: center;
-  }
-
-  .soundtrack_h3 {
-  }
-
-  .soundtrack_notable_tracks {
-    
   }
 
   .soundtrack_listen {
