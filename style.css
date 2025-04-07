@@ -161,6 +161,26 @@ When naming classes, use this format: .yourpage-thing
 
 
   /*CAST PAGE STYLES*/
+ .cast_names_gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+.cast_names_gallery:hover {
+    border: 1px solid #777;
+  }
+  
+ .cast_names_gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+.cast_information {
+    padding: 15px;
+    text-align: center;
+  }
 
   /*END CAST PAGE STYLES*/
 
