@@ -159,9 +159,39 @@ When naming classes for your individual pages, use BEM naming conventions
 
 
   /*HOMEPAGE STYLES*/
+.home_content {
+  max-width: 90vw;
+  justify-self: center;
+  margin: 20px;
+}
+
+.home_hero {
+  position: relative;
+  width: 100vw;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_hero_content {
+  background-color: DCC9A7;
+  background-size: cover;
+  height: 33vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  justify-items: center;
+}
 
 
-
+.home_content_image_container {
+  display: flex;
+  width: 100vw;
+  justify-items: center;
+  margin-top: 30px;
+  height: 600px;
+  column-gap: 10px;
+}
   /*END HOMEPAGE STYLES*/
 
 
