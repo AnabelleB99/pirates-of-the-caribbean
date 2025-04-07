@@ -62,19 +62,136 @@
     color: #bb2326;
   }
 
-  /*END BASE STYLES*/
+  header {
+    background-image: linear-gradient(to right, #020202, #b18852);
+    height: 50px;
+    align-content: center;
+  }
 
+  nav a {
+    color: #fbf8e0;
+    text-decoration: none;
+  }
+ 
+  .nav_home {
+    padding: 30px;
+    margin-left: 10%;
+    margin-right: 50%;
+    text-transform: uppercase;
+  }
+
+  .nav_page {
+    padding: 3px;
+  }
+
+  .secondary-button {
+    background-color: #b18852; 
+    color: #020202;            
+    padding: 12px 28px;
+    border-radius: 4px;
+    border: transparent;
+    font-family: 'UglyQua', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .secondary-button:hover {
+    background-color: #020202; 
+    color: #b18852;
+  }   
+
+/*END BASE STYLES*/
+
+/*MEDIA QUERIES*/
+  @media screen and (max-width: 1100px) {
+    header {
+      height: 5vw;
+      align-content: center;
+      width: 100vw;
+    }
+    .nav_home {
+      padding: 30px;
+      margin-left: 10vw;
+      margin-right: 30vw;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  
+    .nav_page {
+      padding: 3px;
+      font-size: 12px;
+    }
+
+    .primary-button {
+      padding: 5px 12px;
+      border-radius: 4px;
+      border: transparent;
+      font-size: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+/*SOUNDTRACK MEDIA QUERIES*/
+    .soundtrack_hero_title {
+      font-size: 64px;
+    }
+
+    .soundtrack_hero_subtitle {
+      font-size: 25px;
+      padding-top: 20px;
+    }
+
+    .soundtrack_content_tracks_container {
+      
+    }  
+    
+  }
+
+/*END MEDIA QUERIES*/
 
 /*Individual page styles go below. 
 
-Please keep them organized!!!
+!!!Please keep them organized!!!
 
-When naming classes, use this format: .yourpage-thing 
-(e.g., .about-header, .home-section) to avoid confusion and keep things tidy.*/
+When naming classes for your individual pages, use BEM naming conventions 
+(e.g., about__header) to avoid confusion and keep things tidy.*/
 
 
   /*HOMEPAGE STYLES*/
+.home_content {
+  max-width: 90vw;
+  justify-self: center;
+  margin: 20px;
+}
 
+.home_hero {
+  position: relative;
+  width: 100vw;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_hero_content {
+  background-color: DCC9A7;
+  background-size: cover;
+  height: 33vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  justify-items: center;
+}
+
+
+.home_content_image_container {
+  display: flex;
+  width: 100vw;
+  justify-items: center;
+  margin-top: 30px;
+  height: 600px;
+  column-gap: 10px;
+}
   /*END HOMEPAGE STYLES*/
 
 
@@ -207,9 +324,15 @@ When naming classes, use this format: .yourpage-thing
   /*SOUNDTRACK PAGE STYLES*/
 
 .soundtrack_content {
-    max-width: 90vw;
-    justify-self: center;
-    margin: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas:
+    'composers'
+    'themes'
+    'tracks';
   }
 
   .soundtrack_hero {
@@ -222,12 +345,13 @@ When naming classes, use this format: .yourpage-thing
   }
 
   .soundtrack_hero_content {
-    background-image: url(Images/jack-sparrow2.jpg);
+    background-image: url(Images/parchment3.jpeg);
     background-size: cover;
     height: 33vh;
     width: 100vw;
     background-repeat: no-repeat;
     justify-items: center;
+    align-items: center;
   }
 
   .soundtrack_hero_title {
@@ -236,49 +360,97 @@ When naming classes, use this format: .yourpage-thing
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
   }
 
   .soundtrack_hero_subtitle {
     text-align: center;
     position: absolute;
-    top: 45%;
+    padding-top: 20px;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    text-shadow:
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
   }
+
+  .soundtrack_h3 {
+    color: white;
+    text-shadow:
+       3px 1.5px 0 #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 2px 0 #000,
+       1px 1px 0 #000;
+  }
+
+  .soundtrack_content_composers_container, .soundtrack_content_theme_container {
+    max-width: 80vw;
+    margin: auto;
+  }
+
+  .soundtrack_content_composers_container {
+    grid-area: composers;
+  }
+
+  .soundtrack_content_theme_container {
+    grid-area: themes;
+  }
+
+  .soundtrack_theme_img, .soundtrack_composer_img {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: 0 0 5px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+  .soundtrack_composer_text, .soundtrack_theme_text {
+    max-width: 50vw;
+    margin: 20px 0 20px;
+  }
+
   .soundtrack_tracks_img {
     width: 100px;
     height: 100px;
-  }
-
-  .soundtrack_img {
-    width: 300px;
-    height: 240px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
   }
 
   .soundtrack_content_tracks_container {
-    display: flex;
-    max-width: 75vw;
-    justify-self: center;
-    margin-top: 30px;
-    height: 600px;
-    column-gap: 40px;
-  }
-
-  .soundtrack_notable_tracks {
-    display: flex;
-    flex-direction: column;
+    grid-area: tracks;
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 350px;
+    column-gap: 50px;
+    justify-items: center; 
+    margin: 100px 0px 100px 0px;
+    justify-content: center;
   }
 
   .soundtrack_track_description {
-    float: right;
+    margin-bottom: 20px;
   }
 
-  .soundtrack_listen {
-    text-decoration: none;
-    color: #bb2326;
-    text-transform: uppercase;
+  .soundtrack_track_title {
+    font-weight: bold;
+    margin-bottom: 15px;
   }
+
+  .soundtrack_tracks_img {
+    float: left;
+    margin-right: 15px;
+  }
+
+
   /*END SOUNDTRACK PAGE STYLES*/
 
 
