@@ -99,11 +99,56 @@
   .secondary-button:hover {
     background-color: #020202; 
     color: #b18852;
-  }            
+  }   
 
+/*END BASE STYLES*/
 
-  /*END BASE STYLES*/
+/*MEDIA QUERIES*/
+  @media screen and (max-width: 1100px) {
+    header {
+      height: 5vw;
+      align-content: center;
+      width: 100vw;
+    }
+    .nav_home {
+      padding: 30px;
+      margin-left: 10vw;
+      margin-right: 30vw;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  
+    .nav_page {
+      padding: 3px;
+      font-size: 12px;
+    }
 
+    .primary-button {
+      padding: 5px 12px;
+      border-radius: 4px;
+      border: transparent;
+      font-size: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+/*SOUNDTRACK MEDIA QUERIES*/
+    .soundtrack_hero_title {
+      font-size: 64px;
+    }
+
+    .soundtrack_hero_subtitle {
+      font-size: 25px;
+      padding-top: 20px;
+    }
+
+    .soundtrack_content_tracks_container {
+      
+    }  
+    
+  }
+
+/*END MEDIA QUERIES*/
 
 /*Individual page styles go below. 
 
@@ -114,8 +159,6 @@ When naming classes for your individual pages, use BEM naming conventions
 
 
   /*HOMEPAGE STYLES*/
-
-
 .home_content {
   max-width: 90vw;
   justify-self: center;
@@ -149,7 +192,6 @@ When naming classes for your individual pages, use BEM naming conventions
   height: 600px;
   column-gap: 10px;
 }
-
   /*END HOMEPAGE STYLES*/
 
 
@@ -289,6 +331,7 @@ When naming classes for your individual pages, use BEM naming conventions
   .soundtrack_hero_subtitle {
     text-align: center;
     position: absolute;
+    padding-top: 20px;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -354,12 +397,6 @@ When naming classes for your individual pages, use BEM naming conventions
     justify-content: center;
   }
 
-  .soundtrack_listen {
-    text-decoration: none;
-    color: #bb2326;
-    text-transform: uppercase;
-  }
-
   .soundtrack_track_description {
     margin-bottom: 20px;
   }
@@ -373,6 +410,7 @@ When naming classes for your individual pages, use BEM naming conventions
     float: left;
     margin-right: 15px;
   }
+
 
   /*END SOUNDTRACK PAGE STYLES*/
 
