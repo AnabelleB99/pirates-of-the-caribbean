@@ -92,12 +92,15 @@ When naming classes, use this format: .yourpage-thing
   }
   .plot-hero__title {
     margin: 10px 500px 0 60px;
+    font-size: 35px;
   }
   .plot-hero__subtitle {
     margin: 0 500px 10px 60px;
+    font-size: 30px;
   }
   .plot-hero__sub-heading {
     word-spacing: 4px;
+    font-size: 18px;
   }
   .plot-hero__sub-heading, .plot-hero__copy {
     color: #fbf8e0;
@@ -132,6 +135,7 @@ When naming classes, use this format: .yourpage-thing
   }
   .plot-details h2 {
     color: #fbf8e0;
+    font-size: 30px;
 }
   .plot-details__grid {
     margin: 0 80px;
@@ -152,10 +156,63 @@ When naming classes, use this format: .yourpage-thing
   }
   .plot-synopsis__heading {
     padding: 40px 200px 10px 200px;
+    font-size: 30px;
   }
   .plot-synopsis__copy { 
     text-indent: 3em;
     padding: 5px 200px;
+    font-size: 18px;
+  }
+  /*Media Query - Mobile*/
+  @media only screen and (max-width: 600px) {
+    .plot-hero {
+      padding: 5px;
+      
+    }
+    .plot-hero__title {
+      font-size: 25px;
+      text-align: center;
+      width: 100%;
+    }
+    .plot-hero__subtitle {
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+    }
+    .plot-hero__sub-heading {
+      font-size: 18px;
+      text-align: center;
+      width: 100%;
+    }
+    .plot-hero__copy {
+      font-size: 15px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .plot-details__grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .plot-synopsis__copy {
+      width: 100%;
+    }
+  }
+  /*Media Query - Tablet*/
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
+      margin: 0 50px 10px 60px;
+    }
+    
+
+    .plot-synopsis__heading {
+      text-align: center;
+    }
+    .plot-synopsis__copy {
+      padding: 5px 50px;
+    }
   }
   /*END PLOT PAGE STYLES*/
 
