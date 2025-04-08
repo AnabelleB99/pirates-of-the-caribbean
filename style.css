@@ -132,9 +132,41 @@
       cursor: pointer;
     }
 
+/*CAST MEDIA QUERIES*/
+    .cast_hero_title {
+      padding: 30px 0;
+    }
+    
+    .cast_hero_title h1 {
+      font-size: 50px;
+    }
+
+    .cast_hero_subtitle {
+      font-size: 30px;
+      padding: 20px;
+    }
+
+    .cast_names_gallery {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+
+    .cast_information h2 {
+      font-size: 1.1rem;
+    }
+
+    .cast_information p {
+      font-size: 0.95rem;
+    }
+
+    .cast_names {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+    }
+
 /*SOUNDTRACK MEDIA QUERIES*/
     .soundtrack_hero_title {
-      font-size: 64px;
+      font-size: 50px;
     }
 
     .soundtrack_hero_subtitle {
@@ -278,7 +310,7 @@ When naming classes for your individual pages, use BEM naming conventions
 
 
   /*CAST PAGE STYLES*/
-  .cast_names_gallery {
+  .cast_information {
     margin: 5px;
     border: 0px solid #ccc;
     float: left;
@@ -289,33 +321,40 @@ When naming classes for your individual pages, use BEM naming conventions
     background-image: url(Images/compass-background.jpg);
     background-size: cover;
     background-position: center;
-    padding: 40px;
+    background-repeat: no-repeat;
+    padding: 40px 0;
     text-align: center;
- }
+  }
 
- .cast_names {
+  .cast_names {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 300px  300px 300px;
+    grid-template-rows: auto;
     background-image: url(Images/parchment-bg.jpg) ;
     background-position: center;
     background-size: cover;
     justify-content: center;
-    gap: 200px;
-    grid-template-rows: 400px 400px 400px;
+    gap: 80px;
     padding-top: 30px;
- }
+    padding-bottom: 40px;
+    background-image: url(Images/parchment--background.jpg.avif);
+  }
   
- .cast_names_gallery img {
+  .cast_names_gallery img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     border: 10px solid #020202;
   }
-  
-.cast_information {
-    padding: 30px;
+
+  .cast_information {
+    padding: 40px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 60px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto auto auto;
+    display: grid;
   }
 
   /*END CAST PAGE STYLES*/
