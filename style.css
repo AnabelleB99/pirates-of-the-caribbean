@@ -6,10 +6,6 @@
     border: 0;
  }
 
-:root {
-    --primary-color: black;
-  }
-
   @font-face {
     font-family: 'PiecesOfEight';
     src: url('fonts/PiecesofEight.ttf') format('truetype');
