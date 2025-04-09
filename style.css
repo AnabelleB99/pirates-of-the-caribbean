@@ -247,6 +247,7 @@ When naming classes, use this format: .yourpage-thing
 
 .bts_body {
   padding: 30px;
+  background-image: url(Images/parchment--background.jpg.avif);
 }
 
 .bts_container {
@@ -258,7 +259,7 @@ When naming classes, use this format: .yourpage-thing
     "gallery"
     "bts_dyk"
     "bts_video";
-  padding: 20px;
+  padding: 20px 0px;
   row-gap: 50px;
 }
 
@@ -267,7 +268,7 @@ When naming classes, use this format: .yourpage-thing
   display: flex;
   justify-content: center;
   padding: 50px;
-  background-image: url('Images/parchment--background.jpg.avif');
+  background-color: #fbf8e0;
 }
 
 .bts_gallery_container {
@@ -353,3 +354,68 @@ When naming classes, use this format: .yourpage-thing
   /*END BEHIND THE SCENES PAGE STYLES*/
 
 
+
+/*BTS MEDIA QUERIES*/
+
+@media screen and (max-width: 600px) {
+  .bts_body {
+    padding: 20px;
+    
+  }
+
+  .bts_container {
+    margin: 10px auto;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-rows: auto auto auto auto; 
+    row-gap: 30px;
+  }
+
+  .soundtrack_hero_subtitle {
+    font-size: 25px;
+    padding-top: 20px;
+  }  
+ 
+  .soundtrack_content_tracks_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+}
+
+/*BTS MEDIA QUERIES*/
+
+@media screen and (max-width: 600px) {
+  .bts_body {
+    padding: 20px;
+    
+  }
+
+  .bts_container {
+    margin: 10px auto;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-rows: auto auto auto auto; 
+    row-gap: 30px;
+  }
+
+  .bts_h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-size: cover;
+    padding: 5px;
+
+}
+
+
+
+/*END BTS MEDIA QUERIES*/
