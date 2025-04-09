@@ -215,13 +215,8 @@ When naming classes for your individual pages, use BEM naming conventions
   .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
     color: #fbf8e0;
   }
-  .plot-hero__title {
-    margin: 10px 500px 0 60px;
-    font-size: 35px;
-  }
-  .plot-hero__subtitle {
-    margin: 0 500px 10px 60px;
-    font-size: 30px;
+  .plot-hero__title, .plot-hero__subtitle {
+    margin: 5px 500px 5px 60px;
   }
   .plot-hero__sub-heading {
     word-spacing: 4px;
