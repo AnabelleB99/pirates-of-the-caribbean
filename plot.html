@@ -10,39 +10,47 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./home.html"> <img src="Images/Pirates-of-the-Caribbean-Logo-2003.png" width="150px" alt="Pirates of the Caribbean: Curse of the Black Pearl on parchment with skull and crossbones"> </a>
-            <a href="./home.html">Home</a>
-            <a href="./plot.html">Plot</a>
-            <a href="./cast.html">Cast</a>
-            <a href="./soundtrack.html">Soundtrack</a>
-            <a href="./behind-the-scenes.html">Behind the Scenes</a>
+        <nav class="navbar">
+            <a href="./index.html">
+                <img src="Images/Pirates-of-the-Caribbean-Logo-2003.png" class="nav-logo" width="100px" height="auto" alt="Pirates of the Caribbean Logo">
+            </a>
+            
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./plot.html">Plot</a>
+                <a href="./cast.html">Cast</a>
+                <a href="./soundtrack.html">Soundtrack</a>
+                <a href="./behind-the-scenes.html">Behind the Scenes</a>
+            </div>
         </nav>
     </header>
     <main>
         <section class="plot-hero">
             <h1 class="plot-hero__title">Pirates of the Caribbean:</h1>
             <h2 class="plot-hero__subtitle">The Curse of the Black Pearl</h2>
-            <h3 class="plot-hero__sub-heading">IMDB: 8.1 | Duration: 2h 23m | Year: 2003</h3>
+            <h3 class="plot-hero__sub-heading"><img src="Images/star-icon.png" width="15px" height="15px" alt="decorative star icon"> IMDB: 8.1 <img src="Images/time-icon.png" width="15px" height="15px" alt="decorative clock icon"> Duration: 2h 23m <img src="Images/calendar-icon.png" width="15px" height="15px" alt="decorative calendar icon"> Year: 2003</h3>
             <p class="plot-hero__copy">Blacksmith Will Turner teams up with eccentric pirate "Captain" Jack Sparrow to save Elizabeth Swann, the governor's daughter and his love, from Jack's former pirate allies, who are now undead.</p>
             <a href="https://youtu.be/naQr0uTrH_s?si=36_d8EbBSLtT_zsu" class="plot-hero__button">Watch Trailer</a>
         </section>
         <section class="plot-details">
             <div class="plot-details__grid">
                 <div class="plot-details__grid--1">
-                    <h2>Category</h2>
+                    <h2 class="plot-details__masked-text">Category</h2>
                     <p>Adventure/Action</p>
                 </div>
                 <div class="plot-details__grid--2">
-                    <h2>Composer</h2>
+                    <h2 class="plot-details__masked-text">Composer</h2>
                     <p>Hans Zimmer, Klaus Badelt, Geoff Zanelli</p>
                 </div>
                 <div class="plot-details__grid--3">
-                    <h2>Director/ Writers</h2>
+                    <h2 class="plot-details__masked-text">Director/ Writers</h2>
                     <p>Gore Verbinski, Ted Elliott, Terry Rossio, Stuart Beattie, Jay Wolpert</p>
                 </div>
                 <div class="plot-details__grid--4">
-                    <h2>Stars</h2>
+                    <h2 class="plot-details__masked-text">Stars</h2>
                     <p>Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley</p>
                 </div>
             </div>

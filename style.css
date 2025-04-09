@@ -6,10 +6,6 @@
     border: 0;
  }
 
-:root {
-    --primary-color: black;
-  }
-
   @font-face {
     font-family: 'PiecesOfEight';
     src: url('fonts/PiecesofEight.ttf') format('truetype');
@@ -26,25 +22,21 @@
     font-size: 18px;
     color: #020202;
   }
-
   h1 {
     font-family: 'PiecesOfEight', sans-serif;
     font-size: 72px;
     color: #bb2326;
   } 
-
   h2 {
     font-family: 'PiecesOfEight', sans-serif;
     font-size: 40px;
     color: #020202;
   }
-
   h3 {
     font-family: 'PiecesOfEight', sans-serif;
     font-size: 28px;
     color: #020202;
   }
-
   .primary-button {
     background-color: #bb2326;
     color: #fbf8e0;
@@ -56,35 +48,92 @@
     text-decoration: none;
     cursor: pointer;
   }
-
   .primary-button:hover {
     background-color: #fbf8e0;
     color: #bb2326;
   }
+  
+/* Base Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 0 16px;
+  position: relative;
+  flex-wrap: wrap;
+}
 
-  header {
-    background-image: linear-gradient(to right, #020202, #b18852);
-    height: 50px;
-    align-content: center;
-    border-bottom: 3px solid black;
+.nav-logo {
+  height: 50px;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fbf8e0;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fbf8e0;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
   }
 
-  nav a {
-    color: #fbf8e0;
-    text-decoration: none;
-  }
- 
-  .nav_home {
-    padding: 30px;
-    margin-left: 10%;
-    margin-right: 50%;
-    text-transform: uppercase;
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    order: 3; /* Push menu below */
   }
 
-  .nav_page {
-    padding: 3px;
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
   }
 
+  .nav-links a {
+    text-align: center;
+    padding: 12px;
+  }
+
+  .navbar {
+    
+    flex-wrap: wrap;
+  }
+
+  .nav-logo {
+    order: 1;
+  }
+
+  .hamburger {
+    order: 2;
+  }
+}
   footer {
     background-image: linear-gradient(to left, #020202, #b18852);
     height: 80px;
@@ -93,8 +142,7 @@
     align-content: center;
     border-top: 3px solid black;
   }
-
-  .secondary-button {
+.secondary-button {
     background-color: #b18852; 
     color: #020202;            
     padding: 12px 28px;
@@ -105,12 +153,10 @@
     text-decoration: none;
     cursor: pointer;
   }
-  
-  .secondary-button:hover {
+.secondary-button:hover {
     background-color: #020202; 
     color: #b18852;
   }   
-
 /*END BASE STYLES*/
 
 /*Individual page styles go below. 
@@ -160,27 +206,23 @@ When naming classes for your individual pages, use BEM naming conventions
 
   /*PLOT PAGE STYLES*/
   .plot-hero {
-    background-position: center;
-    background-image: url(Images/PoC_Hero-Image-1.png);
+    background-image: url(Images/plot-pirates-hero-image.png);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-    padding: 40px 0;
+    padding: 80px 0;
   }
-  .plot-hero__title, .plot-hero__subtitle {
+  .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
     color: #fbf8e0;
   }
-  .plot-hero__title {
-    margin: 10px 500px 0 60px;
-  }
-  .plot-hero__subtitle {
-    margin: 0 500px 10px 60px;
+  .plot-hero__title, .plot-hero__subtitle {
+    margin: 5px 500px 5px 60px;
   }
   .plot-hero__sub-heading {
     word-spacing: 4px;
+    font-size: 18px;
   }
   .plot-hero__sub-heading, .plot-hero__copy {
-    color: #fbf8e0;
     margin: 10px 500px 0 60px;
   }
   .plot-hero__button {
@@ -200,21 +242,11 @@ When naming classes for your individual pages, use BEM naming conventions
     background-color: #fbf8e0;
     color: #bb2326;
   }
-
-  .plot-details {
-    background-position: center top;
-    background-image: url(Images/PoC_Skull-and-Crossbones.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 200px;
-    height: 50vh;
-    color: #fbf8e0;
-  }
   .plot-details h2 {
-    color: #fbf8e0;
+    font-size: 30px;
 }
   .plot-details__grid {
-    margin: 0 80px;
+    padding: 40px 200px 10px 200px;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 100px;
@@ -222,21 +254,98 @@ When naming classes for your individual pages, use BEM naming conventions
     align-content: space-evenly;
     gap: 40px 80px;
   }
- 
   .plot-synopsis {
-    background-position: center;
-    background-image: url(Images/parchment--background.jpg.avif);
-    background-size: cover;
-    max-width: 100%;
     padding-bottom: 40px;
   }
   .plot-synopsis__heading {
     padding: 40px 200px 10px 200px;
+    font-size: 30px;
+    text-align: center;
   }
   .plot-synopsis__copy { 
     text-indent: 3em;
     padding: 5px 200px;
+    font-size: 18px;
   }
+  /*Text Animation*/
+  .plot-details {
+    overflow: hidden;
+}
+  .plot-details__masked-text {
+    font-size: 8rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url(Images/red-texture-background.jpg);
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+}
+  @keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+/*Media Query - Mobile*/
+@media only screen and (max-width: 600px) {
+  .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
+    margin: 0 25px 10px 25px;
+    text-align: center;
+  }
+  .plot-hero__title {
+    font-size: 30px;
+  }
+  .plot-hero__subtitle {
+    font-size: 25px;
+  }
+  .plot-hero__sub-heading {
+    font-size: 18px;
+  }
+  .plot-hero__copy {
+    font-size: 15px;
+  }
+  .plot-hero__button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+  }
+  .plot-details__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 30px 25px 10px;
+  }
+  .plot-synopsis__heading {
+    margin: 20px 25px 15px;
+    text-align: center;
+  }
+  .plot-synopsis__copy {
+    margin: 10px 25px;
+  }
+  .plot-synopsis__heading, .plot-synopsis__copy {
+    padding: 0;
+  }
+}
+/*Media Query - Tablet*/
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
+    margin: 0 50px 10px 60px;
+  }
+  .plot-details__grid {
+    padding: 30px 50px 5px;
+  }
+  .plot-synopsis__heading {
+    text-align: center;
+  }
+  .plot-synopsis__copy {
+    padding: 5px 50px;
+  }
+}
   /*END PLOT PAGE STYLES*/
 
 
