@@ -111,54 +111,6 @@
 
 /*END BASE STYLES*/
 
-/*MEDIA QUERIES*/
-  @media screen and (max-width: 1100px) {
-    header {
-      height: 5vw;
-      align-content: center;
-      width: 100vw;
-    }
-    .nav_home {
-      padding: 30px;
-      margin-left: 10vw;
-      margin-right: 30vw;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-
-    footer {
-      font-size: 12px;
-      height: 60px;
-    }
-  
-    .nav_page {
-      padding: 3px;
-      font-size: 12px;
-    }
-
-    .primary-button {
-      padding: 5px 12px;
-      border-radius: 4px;
-      border: transparent;
-      font-size: 10px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-/*SOUNDTRACK MEDIA QUERIES*/
-    .soundtrack_hero_title {
-      font-size: 64px;
-    }
-
-    .soundtrack_hero_subtitle {
-      font-size: 25px;
-      padding-top: 20px;
-    }  
-    
-  }
-
-/*END MEDIA QUERIES*/
-
 /*Individual page styles go below. 
 
 !!!Please keep them organized!!!
@@ -459,7 +411,6 @@ When naming classes for your individual pages, use BEM naming conventions
     margin-right: 15px;
   }
 
-
   /*END SOUNDTRACK PAGE STYLES*/
 
 
@@ -572,4 +523,55 @@ When naming classes for your individual pages, use BEM naming conventions
 
   /*END BEHIND THE SCENES PAGE STYLES*/
 
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1100px) {
+  header {
+    height: 5vw;
+    align-content: center;
+    width: 100vw;
+  }
+  .nav_home {
+    padding: 30px;
+    margin-left: 10vw;
+    margin-right: 30vw;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
 
+  footer {
+    font-size: 12px;
+    height: 60px;
+  }
+
+  .nav_page {
+    padding: 3px;
+    font-size: 12px;
+  }
+
+  .primary-button {
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: transparent;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/*SOUNDTRACK MEDIA QUERIES*/
+  .soundtrack_hero_title {
+    font-size: 64px;
+  }
+
+  .soundtrack_hero_subtitle {
+    font-size: 25px;
+    padding-top: 20px;
+  }  
+ 
+  .soundtrack_content_tracks_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+}
