@@ -66,6 +66,7 @@
     background-image: linear-gradient(to right, #020202, #b18852);
     height: 50px;
     align-content: center;
+    border-bottom: 3px solid black;
   }
 
   nav a {
@@ -90,6 +91,7 @@
     text-align: center;
     color:white;
     align-content: center;
+    border-top: 3px solid black;
   }
 
   .secondary-button {
@@ -110,54 +112,6 @@
   }   
 
 /*END BASE STYLES*/
-
-/*MEDIA QUERIES*/
-  @media screen and (max-width: 1100px) {
-    header {
-      height: 5vw;
-      align-content: center;
-      width: 100vw;
-    }
-    .nav_home {
-      padding: 30px;
-      margin-left: 10vw;
-      margin-right: 30vw;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-
-    footer {
-      font-size: 12px;
-      height: 60px;
-    }
-  
-    .nav_page {
-      padding: 3px;
-      font-size: 12px;
-    }
-
-    .primary-button {
-      padding: 5px 12px;
-      border-radius: 4px;
-      border: transparent;
-      font-size: 10px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-/*SOUNDTRACK MEDIA QUERIES*/
-    .soundtrack_hero_title {
-      font-size: 64px;
-    }
-
-    .soundtrack_hero_subtitle {
-      font-size: 25px;
-      padding-top: 20px;
-    }  
-    
-  }
-
-/*END MEDIA QUERIES*/
 
 /*Individual page styles go below. 
 
@@ -333,10 +287,12 @@ When naming classes for your individual pages, use BEM naming conventions
   /*SOUNDTRACK PAGE STYLES*/
 
 .soundtrack_content {
+    background-position: center;
+    background-image: url(Images/parchment--background.jpg.avif);
+    background-size: cover;
     max-width: 100%;
     max-height: 100%;
     justify-content: center;
-    margin-top: 30px;
     display: grid;
     grid-template-areas:
     'composers'
@@ -354,13 +310,14 @@ When naming classes for your individual pages, use BEM naming conventions
   }
 
   .soundtrack_hero_content {
-    background-image: url(Images/parchment3.jpeg);
+    background-image: url(Images/orchestra.png);
     background-size: cover;
     height: 33vh;
     width: 100vw;
     background-repeat: no-repeat;
     justify-items: center;
     align-items: center;
+    border-bottom: 6px solid black;
   }
 
   .soundtrack_hero_title {
@@ -408,6 +365,7 @@ When naming classes for your individual pages, use BEM naming conventions
 
   .soundtrack_content_composers_container {
     grid-area: composers;
+    margin-top: 40px;
   }
 
   .soundtrack_content_theme_container {
@@ -458,7 +416,6 @@ When naming classes for your individual pages, use BEM naming conventions
     float: left;
     margin-right: 15px;
   }
-
 
   /*END SOUNDTRACK PAGE STYLES*/
 
@@ -572,4 +529,55 @@ When naming classes for your individual pages, use BEM naming conventions
 
   /*END BEHIND THE SCENES PAGE STYLES*/
 
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1100px) {
+  header {
+    height: 5vw;
+    align-content: center;
+    width: 100vw;
+  }
+  .nav_home {
+    padding: 30px;
+    margin-left: 10vw;
+    margin-right: 30vw;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
 
+  footer {
+    font-size: 12px;
+    height: 60px;
+  }
+
+  .nav_page {
+    padding: 3px;
+    font-size: 12px;
+  }
+
+  .primary-button {
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: transparent;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/*SOUNDTRACK MEDIA QUERIES*/
+  .soundtrack_hero_title {
+    font-size: 64px;
+  }
+
+  .soundtrack_hero_subtitle {
+    font-size: 25px;
+    padding-top: 20px;
+  }  
+ 
+  .soundtrack_content_tracks_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+}
