@@ -52,25 +52,7 @@
     background-color: #fbf8e0;
     color: #bb2326;
   }
-  nav {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    padding: 0 16px;
-  }  
-  nav a {
-    color: #fbf8e0;
-    text-decoration: none;
-    padding: 14px 16px;
-  }
-  nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  .nav-logo {
-    height: 40px;
-    margin-right: 20px;
-  }
+  
 /* Base Navbar */
 .navbar {
   display: flex;
@@ -292,6 +274,29 @@ When naming classes for your individual pages, use BEM naming conventions
     text-indent: 3em;
     padding: 5px 200px;
     font-size: 18px;
+  }
+    /*Text Animation*/
+    .plot-details {
+      overflow: hidden;
+  }
+    .plot-details__masked-text {
+      font-size: 8rem;
+      font-weight: bold;
+      color: transparent;
+      background-image: url(Images/Red-texture-background.jpg);
+      background-position: 0 50%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: animate-background 5s infinite alternate linear;
+  }
+    @keyframes animate-background {
+      0% {
+          background-position: 0 50%;
+      }
+      100% {
+          background-position: 100% 50%;
+      }
   }
   /*Media Query - Mobile*/
   @media only screen and (max-width: 600px) {
