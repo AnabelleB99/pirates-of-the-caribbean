@@ -212,7 +212,7 @@ When naming classes for your individual pages, use BEM naming conventions
     background-position:center;
     padding: 80px 0;
   }
-  .plot-hero__title, .plot-hero__subtitle {
+  .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
     color: #fbf8e0;
   }
   .plot-hero__title {
@@ -228,7 +228,6 @@ When naming classes for your individual pages, use BEM naming conventions
     font-size: 18px;
   }
   .plot-hero__sub-heading, .plot-hero__copy {
-    color: #fbf8e0;
     margin: 10px 500px 0 60px;
   }
   .plot-hero__button {
@@ -275,81 +274,81 @@ When naming classes for your individual pages, use BEM naming conventions
     padding: 5px 200px;
     font-size: 18px;
   }
-    /*Text Animation*/
-    .plot-details {
-      overflow: hidden;
+  /*Text Animation*/
+  .plot-details {
+    overflow: hidden;
+}
+  .plot-details__masked-text {
+    font-size: 8rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url(Images/Red-texture-background.jpg);
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+}
+  @keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+/*Media Query - Mobile*/
+@media only screen and (max-width: 600px) {
+  .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
+    margin: 0 15px 10px 15px;
+    text-align: center;
   }
-    .plot-details__masked-text {
-      font-size: 8rem;
-      font-weight: bold;
-      color: transparent;
-      background-image: url(Images/Red-texture-background.jpg);
-      background-position: 0 50%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: animate-background 5s infinite alternate linear;
+  .plot-hero__title {
+    font-size: 30px;
   }
-    @keyframes animate-background {
-      0% {
-          background-position: 0 50%;
-      }
-      100% {
-          background-position: 100% 50%;
-      }
+  .plot-hero__subtitle {
+    font-size: 25px;
   }
-  /*Media Query - Mobile*/
-  @media only screen and (max-width: 600px) {
-    .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
-      margin: 0 15px 10px 15px;
-      text-align: center;
-    }
-    .plot-hero__title {
-      font-size: 30px;
-    }
-    .plot-hero__subtitle {
-      font-size: 25px;
-    }
-    .plot-hero__sub-heading {
-      font-size: 18px;
-    }
-    .plot-hero__copy {
-      font-size: 15px;
-    }
-    .plot-hero__button {
-      display: block;
-      margin: 20px auto;
-      text-align: center;
-      width: fit-content;
-    }
-    .plot-details__grid {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .plot-synopsis__heading {
-      margin: 20px 25px 15px;
-      text-align: center;
-    }
-    .plot-synopsis__copy {
-      margin: 10px 25px;
-    }
-    .plot-synopsis__heading, .plot-synopsis__copy {
-      padding: 0;
-    }
+  .plot-hero__sub-heading {
+    font-size: 18px;
   }
-  /*Media Query - Tablet*/
-  @media only screen and (min-width: 601px) and (max-width: 900px) {
-    .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
-      margin: 0 50px 10px 60px;
-    }
-    .plot-synopsis__heading {
-      text-align: center;
-    }
-    .plot-synopsis__copy {
-      padding: 5px 50px;
-    }
+  .plot-hero__copy {
+    font-size: 15px;
   }
+  .plot-hero__button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+  }
+  .plot-details__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .plot-synopsis__heading {
+    margin: 20px 25px 15px;
+    text-align: center;
+  }
+  .plot-synopsis__copy {
+    margin: 10px 25px;
+  }
+  .plot-synopsis__heading, .plot-synopsis__copy {
+    padding: 0;
+  }
+}
+/*Media Query - Tablet*/
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
+    margin: 0 50px 10px 60px;
+  }
+  .plot-synopsis__heading {
+    text-align: center;
+  }
+  .plot-synopsis__copy {
+    padding: 5px 50px;
+  }
+}
   /*END PLOT PAGE STYLES*/
 
 
