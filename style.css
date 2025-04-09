@@ -357,23 +357,25 @@ When naming classes for your individual pages, use BEM naming conventions
     width: 180px;
   }
   
-  .cast_hero_title {
+  .cast_list {
     background-image: url(Images/compass-background.jpg);
     background-size: cover;
     background-position: center;
-    padding: 40px;
+    background-repeat: no;
+    padding: 60px;
     text-align: center;
- }
+  }
 
+  
  .cast_names {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 300px);
     background-image: url(Images/parchment-bg.jpg) ;
     background-position: center;
     background-size: cover;
     justify-content: center;
     gap: 200px;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: repeat(3, auto);
     padding-top: 30px;
  }
   
@@ -386,7 +388,7 @@ When naming classes for your individual pages, use BEM naming conventions
   
 .cast_information {
     padding: 30px;
-    text-align: center;
+    align-content: center;
     font-size: 60px;
   }
 
