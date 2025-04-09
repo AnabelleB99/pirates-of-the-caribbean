@@ -246,7 +246,7 @@ When naming classes for your individual pages, use BEM naming conventions
     font-size: 30px;
 }
   .plot-details__grid {
-    margin: 25px 80px 0;
+    padding: 40px 200px 10px 200px;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 100px;
@@ -255,14 +255,12 @@ When naming classes for your individual pages, use BEM naming conventions
     gap: 40px 80px;
   }
   .plot-synopsis {
-    background-position: center;
-    background-size: cover;
-    max-width: 100%;
     padding-bottom: 40px;
   }
   .plot-synopsis__heading {
     padding: 40px 200px 10px 200px;
     font-size: 30px;
+    text-align: center;
   }
   .plot-synopsis__copy { 
     text-indent: 3em;
@@ -295,7 +293,7 @@ When naming classes for your individual pages, use BEM naming conventions
 /*Media Query - Mobile*/
 @media only screen and (max-width: 600px) {
   .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
-    margin: 0 15px 10px 15px;
+    margin: 0 25px 10px 25px;
     text-align: center;
   }
   .plot-hero__title {
@@ -320,6 +318,7 @@ When naming classes for your individual pages, use BEM naming conventions
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 30px 25px 10px;
   }
   .plot-synopsis__heading {
     margin: 20px 25px 15px;
@@ -336,6 +335,9 @@ When naming classes for your individual pages, use BEM naming conventions
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
     margin: 0 50px 10px 60px;
+  }
+  .plot-details__grid {
+    padding: 30px 50px 5px;
   }
   .plot-synopsis__heading {
     text-align: center;
