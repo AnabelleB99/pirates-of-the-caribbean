@@ -173,11 +173,6 @@
       font-size: 25px;
       padding-top: 20px;
     }
-
-    .soundtrack_content_tracks_container {
-      
-    }  
-    
   }
 
 /*END MEDIA QUERIES*/
@@ -330,7 +325,6 @@ When naming classes for your individual pages, use BEM naming conventions
     display: grid;
     grid-template-columns: 300px  300px 300px;
     grid-template-rows: auto;
-    background-image: url(Images/parchment-bg.jpg) ;
     background-position: center;
     background-size: cover;
     justify-content: center;
