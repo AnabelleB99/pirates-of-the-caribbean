@@ -118,7 +118,6 @@ When naming classes, use this format: .yourpage-thing
     background-color: #fbf8e0;
     color: #bb2326;
   }
-
   .plot-details h2 {
     font-size: 30px;
 }
@@ -131,7 +130,6 @@ When naming classes, use this format: .yourpage-thing
     align-content: space-evenly;
     gap: 40px 80px;
   }
- 
   .plot-synopsis {
     background-position: center;
     background-size: cover;
@@ -151,22 +149,19 @@ When naming classes, use this format: .yourpage-thing
   @media only screen and (max-width: 600px) {
     .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
       margin: 0 15px 10px 15px;
+      text-align: center;
     }
     .plot-hero__title {
       font-size: 30px;
-      text-align: center;
     }
     .plot-hero__subtitle {
       font-size: 25px;
-      text-align: center;
     }
     .plot-hero__sub-heading {
       font-size: 18px;
-      text-align: center;
     }
     .plot-hero__copy {
       font-size: 15px;
-      text-align: center;
     }
     .plot-hero__button {
       display: block;
@@ -174,7 +169,6 @@ When naming classes, use this format: .yourpage-thing
       text-align: center;
       width: fit-content;
     }
-  
     .plot-details__grid {
       display: flex;
       flex-direction: column;
@@ -184,7 +178,6 @@ When naming classes, use this format: .yourpage-thing
       margin: 20px 25px 15px;
       text-align: center;
     }
-
     .plot-synopsis__copy {
       margin: 10px 25px;
     }
