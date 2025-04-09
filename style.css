@@ -206,7 +206,7 @@ When naming classes for your individual pages, use BEM naming conventions
 
   /*PLOT PAGE STYLES*/
   .plot-hero {
-    background-image: url(Images/PoC_Hero-Image-1.png);
+    background-image: url(Images/plot-pirates-hero-image.png);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -277,7 +277,7 @@ When naming classes for your individual pages, use BEM naming conventions
     font-size: 8rem;
     font-weight: bold;
     color: transparent;
-    background-image: url(Images/Red-texture-background.jpg);
+    background-image: url(Images/red-texture-background.jpg);
     background-position: 0 50%;
     background-clip: text;
     -webkit-background-clip: text;
