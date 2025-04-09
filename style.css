@@ -91,23 +91,41 @@ When naming classes, use this format: .yourpage-thing
   align-items: center;
 }
 
-.home_hero_content {
+.home_content_image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.home_img {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.home_hero_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: DCC9A7;
   background-size: cover;
-  height: 33vh;
-  width: 100vw;
+  height: 10vh;
+  width: 20vw;
   background-repeat: no-repeat;
   justify-items: center;
 }
 
-
-.home_content_image_container {
+.home_hero_text {
   display: flex;
   width: 100vw;
   justify-items: center;
   margin-top: 30px;
   height: 600px;
-  column-gap: 10px;
+  gap: 10px;
 }
 
   /*END HOMEPAGE STYLES*/
