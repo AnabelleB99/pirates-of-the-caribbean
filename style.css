@@ -80,7 +80,6 @@ When naming classes, use this format: .yourpage-thing
 
   /*PLOT PAGE STYLES*/
   .plot-hero {
-    background-position: center;
     background-image: url(Images/PoC_Hero-Image-1.png);
     background-repeat:no-repeat;
     background-size:cover;
@@ -124,21 +123,11 @@ When naming classes, use this format: .yourpage-thing
     color: #bb2326;
   }
 
-  .plot-details {
-    background-position: center top;
-    background-image: url(Images/PoC_Skull-and-Crossbones.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 200px;
-    height: 50vh;
-    color: #fbf8e0;
-  }
   .plot-details h2 {
-    color: #fbf8e0;
     font-size: 30px;
 }
   .plot-details__grid {
-    margin: 0 80px;
+    margin: 25px 80px 0;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 100px;
@@ -149,7 +138,6 @@ When naming classes, use this format: .yourpage-thing
  
   .plot-synopsis {
     background-position: center;
-    background-image: url(Images/parchment--background.jpg.avif);
     background-size: cover;
     max-width: 100%;
     padding-bottom: 40px;
@@ -165,29 +153,30 @@ When naming classes, use this format: .yourpage-thing
   }
   /*Media Query - Mobile*/
   @media only screen and (max-width: 600px) {
-    .plot-hero {
-      padding: 5px;
-      
+    .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
+      margin: 0 15px 10px 15px;
     }
     .plot-hero__title {
-      font-size: 25px;
+      font-size: 30px;
       text-align: center;
-      width: 100%;
     }
     .plot-hero__subtitle {
-      font-size: 20px;
+      font-size: 25px;
       text-align: center;
-      width: 100%;
     }
     .plot-hero__sub-heading {
       font-size: 18px;
       text-align: center;
-      width: 100%;
     }
     .plot-hero__copy {
       font-size: 15px;
       text-align: center;
-      width: 100%;
+    }
+    .plot-hero__button {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      width: fit-content;
     }
   
     .plot-details__grid {
@@ -195,9 +184,16 @@ When naming classes, use this format: .yourpage-thing
       flex-direction: column;
       gap: 1rem;
     }
+    .plot-synopsis__heading {
+      margin: 20px 25px 15px;
+      text-align: center;
+    }
 
     .plot-synopsis__copy {
-      width: 100%;
+      margin: 10px 25px;
+    }
+    .plot-synopsis__heading, .plot-synopsis__copy {
+      padding: 0;
     }
   }
   /*Media Query - Tablet*/
@@ -205,8 +201,6 @@ When naming classes, use this format: .yourpage-thing
     .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
       margin: 0 50px 10px 60px;
     }
-    
-
     .plot-synopsis__heading {
       text-align: center;
     }
