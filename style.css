@@ -159,6 +159,81 @@
   }   
 /*END BASE STYLES*/
 
+/*MEDIA QUERIES*/
+  @media screen and (max-width: 1100px) {
+    header {
+      height: 5vw;
+      align-content: center;
+      width: 100vw;
+    }
+    .nav_home {
+      padding: 30px;
+      margin-left: 10vw;
+      margin-right: 30vw;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  
+    .nav_page {
+      padding: 3px;
+      font-size: 12px;
+    }
+
+    .primary-button {
+      padding: 5px 12px;
+      border-radius: 4px;
+      border: transparent;
+      font-size: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+/*CAST MEDIA QUERIES*/
+    .cast_hero_title {
+      padding: 30px 0;
+    }
+    
+    .cast_hero_title h1 {
+      font-size: 50px;
+    }
+
+    .cast_hero_subtitle {
+      font-size: 30px;
+      padding: 20px;
+    }
+
+    .cast_names_gallery {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+
+    .cast_information h2 {
+      font-size: 1.1rem;
+    }
+
+    .cast_information p {
+      font-size: 0.95rem;
+    }
+
+    .cast_names {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+    }
+
+/*SOUNDTRACK MEDIA QUERIES*/
+    .soundtrack_hero_title {
+      font-size: 50px;
+    }
+
+    .soundtrack_hero_subtitle {
+      font-size: 25px;
+      padding-top: 20px;
+    }
+  }
+
+/*END MEDIA QUERIES*/
+
+
 /*Individual page styles go below. 
 
 !!!Please keep them organized!!!
@@ -350,44 +425,46 @@ When naming classes for your individual pages, use BEM naming conventions
 
 
   /*CAST PAGE STYLES*/
-  .cast_names_gallery {
+  .cast_information {
     margin: 5px;
     border: 0px solid #ccc;
-    float: left;
-    width: 180px;
+    width: auto;
   }
   
-  .cast_hero_title {
+  .cast_list {
     background-image: url(Images/compass-background.jpg);
     background-size: cover;
     background-position: center;
-    padding: 40px;
+    background-repeat: no;
+    padding: 60px;
     text-align: center;
- }
-
+  }
+  
  .cast_names {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     background-image: url(Images/parchment-bg.jpg) ;
     background-position: center;
     background-size: cover;
     justify-content: center;
-    gap: 200px;
-    grid-template-rows: 400px 400px 400px;
+    justify-items: center;
+    gap: 100px;
+    grid-template-rows: repeat(3, auto);
     padding-top: 30px;
- }
+    padding-bottom: 40px;
+    background-image: url(Images/parchment--background.jpg.avif);
+  }
   
- .cast_names_gallery img {
+ .cast_names_photo {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     border: 10px solid #020202;
   }
-  
+
 .cast_information {
     padding: 30px;
     text-align: center;
-    font-size: 60px;
   }
 
   /*END CAST PAGE STYLES*/
