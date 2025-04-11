@@ -250,32 +250,75 @@ When naming classes for your individual pages, use BEM naming conventions
 }
 
 .home_hero {
-  position: relative;
-  width: 100vw;
-  height: 33vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  padding: 40px 20px;
+  background-color: #dcc9a7;
+  text-align: center;
 }
 
 .home_hero_content {
-  background-color: DCC9A7;
-  background-size: cover;
-  height: 33vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  justify-items: center;
-}
-
-
-.home_content_image_container {
   display: flex;
-  width: 100vw;
-  justify-items: center;
-  margin-top: 30px;
-  height: 600px;
-  column-gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
+
+.home_hero_title,
+.home_hero_subtitle {
+  margin: 0;
+}
+
+.home_img {
+  width: 500px;
+  max-width: 90vw;
+  height: auto;
+}
+
+.home_hero_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.home_text {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .home_hero_title {
+    font-size: 1.6rem;
+  }
+
+  .home_hero_subtitle {
+    font-size: 1.3rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .home_text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .home_img {
+    max-width: 90%;
+  }
+}
+
   /*END HOMEPAGE STYLES*/
 
 
