@@ -354,26 +354,6 @@ When naming classes, use this format: .yourpage-thing
   /*END BEHIND THE SCENES PAGE STYLES*/
 
 
-
-/*BTS MEDIA QUERIES*/
-
-@media screen and (max-width: 600px) {
-  .bts_body {
-    padding: 20px;
-    
-  }
-
-  .bts_container {
-    margin: 10px auto;
-    padding: 10px 0px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    grid-template-rows: auto auto auto auto; 
-    row-gap: 30px;
-  }
-
   .soundtrack_hero_subtitle {
     font-size: 25px;
     padding-top: 20px;
@@ -386,7 +366,7 @@ When naming classes, use this format: .yourpage-thing
     row-gap: 50px;
   }
 
-}
+
 
 /*BTS MEDIA QUERIES*/
 
@@ -417,5 +397,7 @@ When naming classes, use this format: .yourpage-thing
 }
 
 
+
+}
 
 /*END BTS MEDIA QUERIES*/
