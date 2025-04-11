@@ -256,7 +256,8 @@ When naming classes for your individual pages, use BEM naming conventions
   align-items: center;
   width: 100vw;
   padding: 40px 20px;
-  background-color: #dcc9a7;
+  background-image: url(Images/parchment3.jpeg);
+  background-position: 0 25%;
   text-align: center;
 }
 
@@ -291,7 +292,7 @@ When naming classes for your individual pages, use BEM naming conventions
   max-width: 800px;
   text-align: center;
   font-size: 1.1rem;
-  color: #333;
+  color: 333;
 }
 
 @media (max-width: 768px) {
