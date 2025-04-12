@@ -6,15 +6,16 @@
     border: 0;
  }
 
-  @font-face {
-    font-family: 'PiecesOfEight';
-    src: url('fonts/PiecesofEight.ttf') format('truetype');
-  }
+ @font-face {
+  font-family: 'PiecesOfEight';
+  src: url('fonts/PiecesofEight.ttf') format("truetype"),
+  url(fonts/PiecesOfEight.woff) format("woff");
+}
 
-  @font-face {
-    font-family: 'UglyQua';
-    src: url('fonts/UglyQua.ttf') format('truetype');
-  }
+@font-face {
+  font-family: 'UglyQua';
+  src: url('fonts/UglyQua.ttf') format("truetype");
+}
 
   body {
     background: #dcc9a7;
@@ -686,6 +687,7 @@ When naming classes for your individual pages, use BEM naming conventions
   /*BEHIND THE SCENES PAGE STYLES*/
 
 .bts_body {
+
   padding: 30px;
 }
 
@@ -791,6 +793,7 @@ When naming classes for your individual pages, use BEM naming conventions
   }
 
   /*END BEHIND THE SCENES PAGE STYLES*/
+
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1100px) {
