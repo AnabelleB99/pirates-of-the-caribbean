@@ -673,6 +673,7 @@ nav {
 
 .bts_body {
 padding: 30px;
+background-image: url(Images/parchment--background.jpg.avif);
 }
 
 .bts_container {
@@ -830,6 +831,7 @@ border-radius: 5px;
 .bts_body {
   padding: 0px;
   max-width: 100%;
+  background-image: url(Images/parchment--background.jpg.avif);
 }
 
 .bts_gallery_container {
