@@ -333,6 +333,7 @@ When naming classes for your individual pages, use BEM naming conventions
 
 .fun_facts_content {
   max-width: 800px;
+  width: 100%;
   text-align: center;
 }
 
@@ -343,8 +344,11 @@ When naming classes for your individual pages, use BEM naming conventions
 }
 
 .fun_facts ul {
-  list-style-type: pirate;
-  padding-left: 0;
+  list-style-type: decimal;
+  padding-left: 20px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .fun_facts li {
@@ -352,6 +356,7 @@ When naming classes for your individual pages, use BEM naming conventions
   margin: 10px 0;
   color: #333;
 }
+
 
   /*END HOMEPAGE STYLES*/
 
