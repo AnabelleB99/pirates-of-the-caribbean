@@ -673,7 +673,7 @@ nav {
 
 .bts_body {
 padding: 30px;
-background-image: url(Images/parchment--background.jpg.avif);
+background-image: url(Images/bts_background.jpg);
 }
 
 .bts_container {
@@ -694,7 +694,6 @@ grid-area: bts_h1;
 display: flex;
 justify-content: center;
 padding: 50px;
-background-image: url('Images/parchment--background.jpg.avif');
 }
 
 .bts_gallery_container {
@@ -783,7 +782,7 @@ border-radius: 5px;
   .bts_body {
     padding: 0px;
     max-width: 100%;
-    
+    background-image: url(images/bts_background.jpg);
   }
 
   .bts_container {
@@ -831,18 +830,12 @@ border-radius: 5px;
 .bts_body {
   padding: 0px;
   max-width: 100%;
-  background-image: url(Images/parchment--background.jpg.avif);
+  background-image: url(Images/bts_background.jpg);
 }
 
 .bts_gallery_container {
-  grid-template-rows: auto auto auto;
-  grid-template-columns: auto auto;
-  row-gap: 30px;
-  column-gap: 30px;
-  padding: 10px;
+grid-template-rows: fill(auto);
 }
-
-
 
 
 }
