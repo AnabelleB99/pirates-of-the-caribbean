@@ -295,6 +295,37 @@ When naming classes for your individual pages, use BEM naming conventions
   color: 333;
 }
 
+.fun_facts {
+  background-color: #f5f2e9;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.fun_facts_content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.fun_facts h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3e3e3e;
+}
+
+.fun_facts ul {
+  list-style-type: pirate; /* optional fun custom list-style if you want to define it */
+  padding-left: 0;
+}
+
+.fun_facts li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #333;
+}
+
 @media (max-width: 768px) {
   .home_hero_title {
     font-size: 1.6rem;
