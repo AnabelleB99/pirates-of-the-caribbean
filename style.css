@@ -6,15 +6,16 @@
     border: 0;
  }
 
-  @font-face {
-    font-family: 'PiecesOfEight';
-    src: url('fonts/PiecesofEight.ttf') format('truetype');
-  }
+ @font-face {
+  font-family: 'PiecesOfEight';
+  src: url('fonts/PiecesofEight.ttf') format("truetype"),
+  url(fonts/PiecesOfEight.woff) format("woff");
+}
 
-  @font-face {
-    font-family: 'UglyQua';
-    src: url('fonts/UglyQua.ttf') format('truetype');
-  }
+@font-face {
+  font-family: 'UglyQua';
+  src: url('fonts/UglyQua.ttf') format("truetype");
+}
 
   body {
     background: #dcc9a7;
