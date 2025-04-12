@@ -672,7 +672,7 @@ nav {
 /*BEHIND THE SCENES PAGE STYLES*/
 
 .bts_body {
-padding: 30px;
+padding: 0px;
 background-image: url(Images/bts_background.jpg);
 }
 
@@ -685,7 +685,7 @@ grid-template-areas:
   "gallery"
   "bts_dyk"
   "bts_video";
-padding: 20px;
+padding: 50px;
 row-gap: 50px;
 }
 
