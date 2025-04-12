@@ -316,7 +316,7 @@ When naming classes for your individual pages, use BEM naming conventions
 }
 
 .fun_facts ul {
-  list-style-type: pirate; /* optional fun custom list-style if you want to define it */
+  list-style-type: pirate;
   padding-left: 0;
 }
 
