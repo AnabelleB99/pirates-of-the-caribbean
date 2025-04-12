@@ -673,6 +673,7 @@ nav {
 
 .bts_body {
 padding: 30px;
+background-image: url(Images/parchment--background.jpg.avif);
 }
 
 .bts_container {
@@ -775,6 +776,79 @@ border-radius: 5px;
   padding-bottom: 50px;
   padding-top: 20px;
 }
+
+/*BTS MEDIA QUERIES*/
+
+@media screen and (max-width: 600px) {
+  .bts_body {
+    padding: 0px;
+    max-width: 100%;
+    
+  }
+
+  .bts_container {
+    margin: 10px auto;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-template-rows: auto auto auto auto auto auto; 
+    row-gap: 30px;
+    grid-template-areas:
+      "bts_nav"
+      "bts_h1" 
+      "gallery"
+      "bts_dyk"
+      "bts_video"
+      "bts_footer";
+      max-width: 80%;
+  }
+
+  .bts_h1 {
+    margin: 0 auto;
+    text-align: center;
+    background-size: cover;
+    max-width: 80%;       
+
+}
+
+.bts_navbar__container {
+  width: 80%;
+  grid-area: bts_nav;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+
+.bts_video {
+  max-width: 100%;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+
+.bts_body {
+  padding: 0px;
+  max-width: 100%;
+  background-image: url(Images/parchment--background.jpg.avif);
+}
+
+.bts_gallery_container {
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  row-gap: 30px;
+  column-gap: 30px;
+  padding: 10px;
+}
+
+
+
+
+}
+
+
+/*END BTS MEDIA QUERIES*/
 
 /*END BEHIND THE SCENES PAGE STYLES*/
 
