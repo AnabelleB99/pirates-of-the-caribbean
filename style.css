@@ -435,7 +435,7 @@ color: 333;
 
   /*PLOT PAGE STYLES*/
   .plot-hero {
-    background-image: url(Images/plot-pirates-hero-image.png);
+    background-image: url(Images/plot-pirates-hero-image.webp);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -504,7 +504,7 @@ color: 333;
     font-size: 8rem;
     font-weight: bold;
     color: transparent;
-    background-image: url(Images/red-texture-background.jpg);
+    background-image: url(Images/red-texture-background.webp);
     background-position: 0 50%;
     background-clip: text;
     -webkit-background-clip: text;
