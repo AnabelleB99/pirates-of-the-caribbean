@@ -615,79 +615,21 @@ footer {
   object-fit: cover;
 }
 
-.circular--portrait { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
-
-
-/*MEDIA QUERIES*/
-@media only screen and (max-width: 600px) {
-  header {
-    height: 5vw;
-    align-content: center;
-    width: 100vw;
-    
-  .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
-    margin: 0 50px 10px 60px;
-  }
-  .plot-details__grid {
-    padding: 30px 50px 5px;
-  }
-  .plot-synopsis__heading {
-    text-align: center;
-  }
-  .plot-synopsis__copy {
-    padding: 5px 50px;
-  }
+.circular--portrait { 
+  position: relative; 
+  width: 200px; 
+  height: 200px; 
+  overflow: hidden; 
+  border-radius: 50%; 
+} 
+  
+.circular--portrait img { 
+  width: 100%; 
+  height: auto; 
 }
-  /*END PLOT PAGE STYLES*/
+/*END CAST PAGE STYLES*/
 
-
-  /*CAST PAGE STYLES*/
-  .cast_information {
-    margin: 5px;
-    border: 0px solid #ccc;
-    width: auto;
-  }
-  
-  .cast_list {
-    background-image: url(Images/compass-background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no;
-    padding: 60px;
-    text-align: center;
-  }
-  
- .cast_names {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-image: url(Images/parchment-bg.jpg) ;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    justify-items: center;
-    gap: 100px;
-    grid-template-rows: repeat(3, auto);
-    padding-top: 30px;
-    padding-bottom: 40px;
-    background-image: url(Images/parchment--background.jpg.avif);
-  }
-  
- .cast_names_photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 10px solid #020202;
-  }
-
-.cast_information {
-    padding: 30px;
-    text-align: center;
-  }
-
-  /*END CAST PAGE STYLES*/
-
-
-  /*SOUNDTRACK PAGE STYLES*/
+/*SOUNDTRACK PAGE STYLES*/
 
 .soundtrack_content {
     background-position: center;
