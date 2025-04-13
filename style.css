@@ -510,6 +510,7 @@ color: 333;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-background 5s infinite alternate linear;
+    color: white; /* fallback for missing background image */
 }
   @keyframes animate-background {
     0% {
