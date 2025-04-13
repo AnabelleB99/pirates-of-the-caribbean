@@ -611,13 +611,11 @@ color: 333;
 }
 
 .cast_names_photo {
-  position: relateive;
   width: 300px;
-  height: 300px;
-  overflow: hidden;
   height: 300px;
   border-radius: 75%;
   border: 5px solid black;
+  object-fit: cover;
 }
 
 .circular--portrait { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
