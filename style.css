@@ -769,11 +769,6 @@ footer {
 /*END SOUNDTRACK PAGE STYLES*/
 
 /*BEHIND THE SCENES PAGE STYLES*/
-
-.bts_body {
-  padding: 30px;
-}
-
 .bts_container {
   display: grid;
   grid-template-columns: auto;
@@ -783,7 +778,6 @@ footer {
     "gallery"
     "bts_dyk"
     "bts_video";
-  padding: 20px;
   row-gap: 50px;
 }
 
@@ -792,7 +786,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 50px;
-  background-image: url(Images/parchment-bg.jpg);
+  background-image: url(Images/parchment2.jpeg);
 }
 
 .bts_gallery_container {
@@ -802,6 +796,7 @@ footer {
   grid-auto-rows: 350px;
   row-gap: 20px;
   column-gap: 20px;
+  padding: 20px;
 }
 
 .bts_gallery_container img {
@@ -819,18 +814,17 @@ footer {
   background-color: #b18852;
   padding: 40px 20px;
   border-radius: 5px;
-  
 }
 
 .bts_dyk__content {
-max-width: 900px;
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 30px;
-background-color: #fbf8e0;
-border-radius: 5px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #fbf8e0;
+  border-radius: 5px;
 }
 
 .bts_dyk__list {
@@ -843,8 +837,7 @@ border-radius: 5px;
   padding-top: 50px;
 }
 
-.bts_video
-{
+.bts_video {
   grid-area: bts_video;
   width: 97%;
   height: auto;
