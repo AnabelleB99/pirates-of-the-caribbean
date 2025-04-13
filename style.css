@@ -57,6 +57,23 @@ h3 {
   background-color: #fbf8e0;
   color: #bb2326;
 }
+
+.secondary-button {
+  background-color: #b18852; 
+  color: #020202;            
+  padding: 12px 28px;
+  border-radius: 4px;
+  border: transparent;
+  font-family: 'UglyQua', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: #020202; 
+  color: #b18852;
+}
   
 /* Base Navbar */
 .navbar {
@@ -147,23 +164,6 @@ footer {
   align-content: center;
   border-top: 3px solid black;
 }
-
-.secondary-button {
-    background-color: #b18852; 
-    color: #020202;            
-    padding: 12px 28px;
-    border-radius: 4px;
-    border: transparent;
-    font-family: 'UglyQua', sans-serif;
-    font-size: 18px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-.secondary-button:hover {
-    background-color: #020202; 
-    color: #b18852;
-  }   
 /*END BASE STYLES*/
 
 /*MEDIA QUERIES*/
