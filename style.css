@@ -629,7 +629,7 @@ color: 333;
     height: 5vw;
     align-content: center;
     width: 100vw;
-    
+  }
   .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
     margin: 0 50px 10px 60px;
   }
@@ -665,7 +665,7 @@ color: 333;
  .cast_names {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-image: url(Images/parchment-bg.jpg) ;
+    background-image: url(Images/parchment2.jpeg) ;
     background-position: center;
     background-size: cover;
     justify-content: center;
@@ -674,15 +674,22 @@ color: 333;
     grid-template-rows: repeat(3, auto);
     padding-top: 30px;
     padding-bottom: 40px;
-    background-image: url(Images/parchment--background.jpg.avif);
   }
   
- .cast_names_photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 10px solid #020202;
+.cast_names_gallery {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 75%;
+  border: 5px solid black;
   }
+
+.cast_names_gallery img {
+  width: 100%;
+  height: auto;
+  }
+
 
 .cast_information {
     padding: 30px;
@@ -831,7 +838,6 @@ color: 333;
   /*BEHIND THE SCENES PAGE STYLES*/
 
 .bts_body {
-
   padding: 30px;
 }
 
@@ -905,8 +911,7 @@ color: 333;
   }
 
 
- .bts_video
-  {
+ .bts_video {
     grid-area: bts_video;
     width: 97%;
     height: auto;
@@ -989,5 +994,4 @@ color: 333;
     flex-wrap: wrap;
     row-gap: 50px;
   }
-
 }
