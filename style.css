@@ -319,6 +319,12 @@ footer {
     font-size: 25px;
     padding-top: 20px;
   }
+  .soundtrack_content_tracks_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
 }
 
 /*END MEDIA QUERIES*/
@@ -868,21 +874,3 @@ border-radius: 5px;
   padding-top: 20px;
 }
 /*END BEHIND THE SCENES PAGE STYLES*/
-
-/*SOUNDTRACK MEDIA QUERIES*/
-  .soundtrack_hero_title {
-    font-size: 64px;
-  }
-
-  .soundtrack_hero_subtitle {
-    font-size: 25px;
-    padding-top: 20px;
-  }  
- 
-  .soundtrack_content_tracks_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 50px;
-  }}
-}
