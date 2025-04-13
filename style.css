@@ -123,35 +123,33 @@ h3 {
 /* Nav Bar Responsive for mobile */
 @media (max-width: 768px) {
   .navbar {
-    display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 16px;
-}
+  }
 
   .nav-logo {
-      order: 1;
+    order: 1;
   }
 
   .hamburger {
-      order: 2;
-      display: block;
-      font-size: 28px;
-      cursor: pointer;
-      color: #fbf8e0;
+    order: 2;
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fbf8e0;
   }
 
   .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #333;
-      order: 3;
+    order: 3;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
   }
 
   #menu-toggle:checked + .hamburger + .nav-links {
-      display: flex;
+    display: flex;
   }
 }
 /* End Nav Bar Responsive for mobile */
@@ -166,7 +164,7 @@ footer {
 }
 /*END BASE STYLES*/
 
-/*MEDIA QUERIES*/
+/* MEDIA QUERIES*/
 
 .home_hero_title {
   font-size: 2rem;
@@ -174,14 +172,6 @@ footer {
 
 .home_hero_subtitle {
   font-size: 1.6rem;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px 40px;
-  gap: 20px;
 }
 
 .home_text {
@@ -230,12 +220,6 @@ nav {
     font-size: 1.3rem;
   }
 
-  nav {
-    flex-direction: column;
-    gap: 12px;
-    padding: 18px;
-  }
-
   .home_text {
     font-size: 1.05rem;
     padding: 0 15px;
@@ -255,13 +239,6 @@ nav {
     font-size: 2rem;
   }
 
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 25px 60px;
-    gap: 30px;
-  }
-
   .home_text {
     font-size: 1.3rem;
     padding: 0 30px;
@@ -274,76 +251,76 @@ nav {
   }
 }
 
-  @media screen and (max-width: 1100px) {
-    header {
-      height: 5vw;
-      align-content: center;
-      width: 100vw;
-    }
-    .nav_home {
-      padding: 30px;
-      margin-left: 10vw;
-      margin-right: 30vw;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-  
-    .nav_page {
-      padding: 3px;
-      font-size: 12px;
-    }
+@media screen and (max-width: 1100px) {
+  header {
+    height: 5vw;
+    align-content: center;
+    width: 100vw;
+  }
+  .nav_home {
+    padding: 30px;
+    margin-left: 10vw;
+    margin-right: 30vw;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
 
-    .primary-button {
-      padding: 5px 12px;
-      border-radius: 4px;
-      border: transparent;
-      font-size: 10px;
-      text-decoration: none;
-      cursor: pointer;
-    }
+  .nav_page {
+    padding: 3px;
+    font-size: 12px;
+  }
+
+  .primary-button {
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: transparent;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 /*CAST MEDIA QUERIES*/
-    .cast_hero_title {
-      padding: 30px 0;
-    }
-    
-    .cast_hero_title h1 {
-      font-size: 50px;
-    }
+  .cast_hero_title {
+    padding: 30px 0;
+  }
+  
+  .cast_hero_title h1 {
+    font-size: 50px;
+  }
 
-    .cast_hero_subtitle {
-      font-size: 30px;
-      padding: 20px;
-    }
+  .cast_hero_subtitle {
+    font-size: 30px;
+    padding: 20px;
+  }
 
-    .cast_names_gallery {
-      grid-template-columns: 1fr;
-      padding: 1rem;
-    }
+  .cast_names_gallery {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
 
-    .cast_information h2 {
-      font-size: 1.1rem;
-    }
+  .cast_information h2 {
+    font-size: 1.1rem;
+  }
 
-    .cast_information p {
-      font-size: 0.95rem;
-    }
+  .cast_information p {
+    font-size: 0.95rem;
+  }
 
-    .cast_names {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto auto;
-    }
+  .cast_names {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
 
 /*SOUNDTRACK MEDIA QUERIES*/
-    .soundtrack_hero_title {
-      font-size: 50px;
-    }
-
-    .soundtrack_hero_subtitle {
-      font-size: 25px;
-      padding-top: 20px;
-    }
+  .soundtrack_hero_title {
+    font-size: 50px;
   }
+
+  .soundtrack_hero_subtitle {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+}
 
 /*END MEDIA QUERIES*/
 
