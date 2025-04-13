@@ -358,58 +358,49 @@ When naming classes for your individual pages, use BEM naming conventions
 }
 
 .home_hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  padding: 40px 20px;
-  background-image: url(Images/parchment3.jpeg);
-  background-position: 0 25%;
-  text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100vw;
+padding: 40px 20px;
+background-image: url(Images/parchment3.jpeg);
+background-position: 0 25%;
+text-align: center;
 }
 
 .home_hero_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
 }
 
 .home_hero_title,
 .home_hero_subtitle {
-  margin: 0;
+margin: 0;
 }
 
 .home_img {
-  width: 500px;
-  max-width: 90vw;
-  height: auto;
+width: 500px;
+max-width: 90vw;
+height: auto;
 }
 
 .home_hero_text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 20px;
-  width: 100vw;
-  background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px 20px;
+width: 100vw;
+background-color: #fff;
 }
 
 .home_text {
-  max-width: 800px;
-  text-align: center;
-  font-size: 1.1rem;
-  color: 333;
-}
-
-.fun_facts {
-  background-color: #f5f2e9;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
+max-width: 800px;
+text-align: center;
+font-size: 1.1rem;
+color: 333;
 }
 
 .fun_facts_content {
@@ -571,6 +562,74 @@ When naming classes for your individual pages, use BEM naming conventions
 }
 /*Media Query - Tablet*/
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+.plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
+  margin: 0 50px 10px 60px;
+}
+.plot-details__grid {
+  padding: 30px 50px 5px;
+}
+.plot-synopsis__heading {
+  text-align: center;
+}
+.plot-synopsis__copy {
+  padding: 5px 50px;
+}
+}
+/*END PLOT PAGE STYLES*/
+
+
+/*CAST PAGE STYLES*/
+.cast_information {
+  margin: 5px;
+  border: 0px solid #ccc;
+  width: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.cast_list {
+  background-image: url(Images/compass-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no;
+  padding: 60px;
+  text-align: center;
+}
+
+.cast_names {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-image: url(Images/parchment-bg.jpg) ;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  justify-items: center;
+  gap: 90px;
+  grid-template-rows: repeat(3, auto);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.cast_names_photo {
+  position: relateive;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 75%;
+  border: 5px solid black;
+}
+
+.circular--portrait { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 600px) {
+  header {
+    height: 5vw;
+    align-content: center;
+    width: 100vw;
+    
   .plot-hero__title, .plot-hero__subtitle, .plot-hero__sub-heading, .plot-hero__copy {
     margin: 0 50px 10px 60px;
   }
