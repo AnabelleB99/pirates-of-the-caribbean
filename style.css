@@ -279,37 +279,6 @@ footer {
     cursor: pointer;
   }
 
-/*CAST MEDIA QUERIES*/
-  .cast_hero_title {
-    padding: 30px 0;
-  }
-  
-  .cast_hero_title h1 {
-    font-size: 50px;
-  }
-
-  .cast_hero_subtitle {
-    font-size: 30px;
-    padding: 20px;
-  }
-
-  .cast_names_gallery {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .cast_information h2 {
-    font-size: 1.1rem;
-  }
-
-  .cast_information p {
-    font-size: 0.95rem;
-  }
-
-  .cast_names {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-  }
 
 /*SOUNDTRACK MEDIA QUERIES*/
   .soundtrack_hero_title {
@@ -603,7 +572,7 @@ footer {
 .cast_names {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-image: url(Images/parchment-bg.jpg) ;
+  background-image: url(Images/parchment2.jpeg);
   background-position: center;
   background-size: cover;
   justify-content: center;
@@ -832,6 +801,7 @@ footer {
   padding: 30px;
   background-color: #fbf8e0;
   border-radius: 5px;
+
   }
   
   .bts_dyk__list {
@@ -939,9 +909,86 @@ footer {
   }
   
   
-  }
   
   
   /*END BTS MEDIA QUERIES*/
   
   /*END BEHIND THE SCENES PAGE STYLES*/
+
+
+.bts_dyk__list {
+  font-family: 'PiecesOfEight', sans-serif;
+  font-size: 40px;
+  color: #020202;
+  padding: 20px;
+  justify-items: center;
+  list-style-type: none;
+  padding-top: 50px;
+}
+
+.bts_video {
+  grid-area: bts_video;
+  width: 97%;
+  height: auto;
+  justify-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #bb2326;
+  border-radius: 5px;
+}
+
+.bts_video__header {
+  text-align: center;
+  padding: 30px;
+  background-color: #fbf8e0;
+  border-radius: 20px;
+}
+
+.bts_video__iframe {
+  width: 100%;
+  max-width: 950px;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+/*END BEHIND THE SCENES PAGE STYLES*/
+ /*CAST MEDIA QUERIES*/
+
+ @media screen and (max-width:600px) {
+
+ .cast_hero_title {
+  padding: 30px 0;
+}
+
+.cast_hero_title h1 {
+  font-size: 50px;
+}
+
+.cast_hero_subtitle {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.cast_names_gallery {
+  grid-template-columns: 1fr;
+  padding: 1rem;
+}
+
+.cast_information h2 {
+  font-size: 1.1rem;
+}
+
+.cast_information p {
+  font-size: 0.95rem;
+}
+
+.cast_names {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+ 
+ }
+/*END CAST MEDIA QUERIES*/
