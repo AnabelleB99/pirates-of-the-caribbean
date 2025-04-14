@@ -879,7 +879,6 @@ footer {
       text-align: center;
       background-size: cover;
       max-width: 80%;       
-  
   }
   
   .bts_navbar__container {
@@ -908,7 +907,7 @@ footer {
   grid-template-rows: fill(auto);
   }
   
-  
+}
   
   
   /*END BTS MEDIA QUERIES*/
@@ -917,43 +916,44 @@ footer {
 
 
 .bts_dyk__list {
-  font-family: 'PiecesOfEight', sans-serif;
-  font-size: 40px;
-  color: #020202;
-  padding: 20px;
-  justify-items: center;
-  list-style-type: none;
-  padding-top: 50px;
+	font-family: 'PiecesOfEight', sans-serif;
+	font-size: 40px;
+	color: #020202;
+	padding: 20px;
+	justify-items: center;
+	list-style-type: none;
+	padding-top: 50px;
 }
 
 .bts_video {
-  grid-area: bts_video;
-  width: 97%;
-  height: auto;
-  justify-items: center;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #bb2326;
-  border-radius: 5px;
+	grid-area: bts_video;
+	width: 97%;
+	height: auto;
+	justify-items: center;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #bb2326;
+	border-radius: 5px;
 }
 
 .bts_video__header {
-  text-align: center;
-  padding: 30px;
-  background-color: #fbf8e0;
-  border-radius: 20px;
+	text-align: center;
+	padding: 30px;
+	background-color: #fbf8e0;
+	border-radius: 20px;
 }
 
 .bts_video__iframe {
-  width: 100%;
-  max-width: 950px;
-  aspect-ratio: 16 / 9;
-  display: block;
-  margin: 0 auto;
-  border: none;
-  padding-bottom: 50px;
-  padding-top: 20px;
+	width: 100%;
+	max-width: 950px;
+	aspect-ratio: 16 / 9;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	padding-bottom: 50px;
+	padding-top: 20px;
 }
+
 /*END BEHIND THE SCENES PAGE STYLES*/
  /*CAST MEDIA QUERIES*/
 
