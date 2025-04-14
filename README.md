@@ -2,6 +2,7 @@
 ## Movie Selected: Pirates of the Caribbean: The Curse of the Black Pearl
 
 Link to Site: https://anabelleb99.github.io/pirates-of-the-caribbean/
+Repository: https://github.com/AnabelleB99/pirates-of-the-caribbean
 
 ## Project Challenges
 ### OVERALL
@@ -16,3 +17,7 @@ Link to Site: https://anabelleb99.github.io/pirates-of-the-caribbean/
 ### SOUNDTRACK PAGE
 - Trouble getting media query to work, ended up moving the code to the bottom of the stylesheet for it to function properly.
 - Utilized grid at first to try and position images, but found that floats/flexbox was easier for some.
+
+### BEHIND THE SCENES PAGE
+- Trouble getting the page to be responsive on mobile. It was a padding issue.
+- Had trouble centering the nav bar and keeping it within the page with media queries.
